@@ -25,7 +25,8 @@ export const fetchTokensRequest = payload => async dispatch => {
       const tokenComplete = { ...token };
       try {
         const contract = new web3.eth.Contract(erc20AbiJson, token.address);
-        tokenComplete.balance = await contract.methods.balanceOf(address).call();
+        const rawBalance = await contract.methods.balanceOf(address).call();
+        tokenComplete.balance = rawBalance / Math.pow(10, tokenComplete.decimals);
         return tokenComplete;
       } catch (error) {
         tokenComplete.balance = 'failed to fetch';
@@ -34,8 +35,18 @@ export const fetchTokensRequest = payload => async dispatch => {
       }
     })
   );
+  balances = balances.sort((a, b) => {
+    if (typeof a.balance === 'string') {
+      return 1;
+    } else if (typeof b.balance === 'string') {
+      return -1;
+    } else {
+      return b.balance - a.balance;
+    }
+  });
   try {
-    ethereumToken.balance = await web3.eth.getBalance(address);
+    const rawBalance = await web3.eth.getBalance(address);
+    ethereumToken.balance = rawBalance / Math.pow(10, ethereumToken.decimals);
   } catch (error) {
     ethereumToken.balance = 'failed to fetch';
     dispatch(fetchTokensError({ error }));

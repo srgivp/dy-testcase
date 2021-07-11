@@ -43,9 +43,9 @@ const tokens = [
   },
   {
     address: '0xef68e7c694f40c8202821edf525de3782458639f',
-    decimals: '-1',
-    name: '',
-    symbol: '',
+    decimals: '18',
+    name: 'Loopring',
+    symbol: 'LRC',
   },
   {
     address: '0xbbbbca6a901c926f240b89eacb641d8aec7aeafd',
@@ -157,8 +157,8 @@ const tokens = [
   },
   {
     address: '0x31a240648e2baf4f9f17225987f6f53fceb1699a',
-    decimals: '-1',
-    name: ',New ICO 2018 (https://safe.ad) - 1 Year Gift',
+    decimals: '0',
+    name: 'SAFE.AD - 20% DISCOUNT UNTIL 1 MAY',
     symbol: 'https://safe.ad',
   },
   {
