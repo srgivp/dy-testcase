@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/dy-testcase/static/js/main.ccb0f091.chunk.js",
+    "main.js.map": "/dy-testcase/static/js/main.ccb0f091.chunk.js.map",
+    "runtime-main.js": "/dy-testcase/static/js/runtime-main.a2d78e4a.js",
+    "runtime-main.js.map": "/dy-testcase/static/js/runtime-main.a2d78e4a.js.map",
+    "static/css/2.a66c0b8b.chunk.css": "/dy-testcase/static/css/2.a66c0b8b.chunk.css",
+    "static/js/2.3feda601.chunk.js": "/dy-testcase/static/js/2.3feda601.chunk.js",
+    "static/js/2.3feda601.chunk.js.map": "/dy-testcase/static/js/2.3feda601.chunk.js.map",
+    "index.html": "/dy-testcase/index.html",
+    "static/css/2.a66c0b8b.chunk.css.map": "/dy-testcase/static/css/2.a66c0b8b.chunk.css.map",
+    "static/js/2.3feda601.chunk.js.LICENSE.txt": "/dy-testcase/static/js/2.3feda601.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/dy-testcase/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2d78e4a.js",
+    "static/css/2.a66c0b8b.chunk.css",
+    "static/js/2.3feda601.chunk.js",
+    "static/js/main.ccb0f091.chunk.js"
+  ]
+}
